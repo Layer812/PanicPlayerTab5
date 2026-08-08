@@ -1,0 +1,11 @@
+# Generated / local CG ROM files
+CGROM.DAT
+Cgrom.dat
+cgrom_bin.c
+
+# Local/editor files
+*.bak
+*.BAK
+*~
+.DS_Store
+Thumbs.db

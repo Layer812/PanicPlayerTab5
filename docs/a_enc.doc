@@ -1,0 +1,106 @@
+	<< 新々グラフィック（code #4）>>
+
+　２年ぶりに MC68000 のコード組んだわりには良い仕事ができたと
+思ってます。今までの圧縮率重視型グラフィック（code #0）に比べ
+て、データサイズが 110% 前後、速度が 120% 前後ってスペックにな
+ってます。
+　いろいろテストしましたが、モノによっては、高速展開型グラフィ
+ック（code #1）を上回るものもありました。少なくとも、お蔵にな
+った code #3 タイプよりは優秀でしょう。
+　方式は code #0 とほとんど同じですが、高速テキスト同様、code #1
+方式を使って高速化してます。
+
+　しかし、もうちょい時間かければ、確実に、code #1 を上回る速度
+を出すのも可能でしょうね。少なくとも、今回の試みでそう確信でき
+ました。あー、おいらがあと２歳若ければ。。。(^^;
+
+　詳しいテクニカルマニュアルはなしみさんにお任せします。なにと
+ぞよろしくお願いします。
+
+					Jun 12'96   pako
+
+
+
++$0000: w   $0004(fixed code)
+
++$0002: b   $02～$22 (１行目の処理番号)
++$0003:     １行目のデータ
+...
++$????: b   $02～$22 (？行目の処理番号)
++$????+1:   ？行目のデータ
+...
++$????: b   $00 (終了コード)
+(計256行)
+
+
+
+modeA	データエンド
+	$00
+
+modeB	現在行を同色でFILL
+	$02,fill
+		fill ってのは、塗り潰す色
+
+modeC	複数行を同色でFILL
+	$04,fill,line
+		line は、塗り潰す行数 -1
+
+modeD	１行前を、現在行にコピー
+	$06
+
+modeE	２行前を、現在行にコピー
+	$08
+
+modeF	３行前を、現在行にコピー
+	$0A
+
+modeG	４行前を、現在行にコピー
+	$0C
+
+modeH	１行前をコピーして修正
+	$0E,count,pos,color,pos,color...count,pos,color,pos,color...
+		現在行を、中心を堺に左右 128 ドットずつの２ブロックに分割
+		count = (128-a)*2+1 : aは修正箇所数(1～128)
+		count = 0 だったらブロックエンド
+		pos = (2*b) : bはブロック内での左端からの位置(0-127)
+
+modeI	２行前をコピーして修正
+	$10,count,pos,color,pos,color...count,pos,color,pos,color...
+
+modeJ	３行前をコピーして修正
+	$12,count,pos,color,pos,color...count,pos,color,pos,color...
+
+modeK	４行前をコピーして修正
+	$14,count,pos,color,pos,color...count,pos,color,pos,color...
+
+modeL	任意色でFILLして修正
+	$16,fill,count,pos,color,pos,color...count,pos,color,pos,color...
+		fill は塗り潰す色
+		理論上、modeL は modeH～K よりも 1000clock ほど高速
+
+modeM	ランレングス
+	$18,color,len,color,len...
+		dot が奇数の場合（最大113dot）: len = neg (dot + 15)
+		dot が偶数の場合（最大112dot）: len = 112 - dot
+		終了 : color,len = $??,$7E
+		dot が 114 以上になる場合には複数回に分割
+
+modeN	ベタ #0
+	$1A,data...
+		code が奇数から始まるベタ
+
+modeO	ベタ #1
+	$1C,0,data...
+		code が偶数から始まるベタ
+
+modeP	１行送り（時間軸利用）
+	$1E
+
+modeQ	複数行送り（時間軸利用）
+	$20,line
+		line は、送る行数 -1
+
+modeR	１フレーム前のデータを修正（時間軸利用）
+	$22,count,pos,color,pos,color...count,pos,color,pos,color...
+
+
