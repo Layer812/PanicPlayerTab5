@@ -4,42 +4,57 @@
 
 # panicplayer
 
-[日本語はこちら / Japanese](README_ja.md)
+[English](README_en.md)
 
-I suddenly felt like watching some old **X68000 PANIC** animations again, so I made a player.
+なんとなく昔の **X68000 PANIC** が見たくなったので、プレイヤーを作ってみました。
 
-I've heard the retro-PC scene can be a slightly scary place sometimes... 😅  
-so, just to be clear:
+レトロPC界隈には怖い人も多いようなので（笑）、  
+念のため書いておきますが、
 
-**This is only a PANIC player!**
+**あくまでもPANICプレイヤーです！**
 
-It's not intended to be a general-purpose X68000 emulator.  
-It implements just enough of an X68000-compatible environment to play `.PAN` files on an **M5Stack Tab5**.
+汎用X68000エミュレータを目指したものではなく、PANICを再生するために必要な範囲のX68000互換環境を実装しています。  
+M5Stack Tab5で `.PAN` ファイルを再生するためのものです。
 
-There is, however, one small problem.
+……というわけで作ってみたのですが、
 
-**I only have one PANIC file.**
+**肝心のPANICデータが手元に1つしかありません。**
 
-I'm pretty sure there used to be tons of them...
+昔は山ほどあった気がするんですけどね……。
 
-So if you have some old PANIC data hiding on an HDD, MO disk, CD-R, or backup somewhere, please give it a try.
+古いHDD、MO、CD-Rの片隅などにPANICデータが残っていて、
 
-And if you happen to have a PANIC file that **doesn't work** with panicplayer...
+> 「これ、panicplayerで動くかな？」
 
-**I'd be very happy if you quietly sent it my way. :)**
+というものがありましたら、ぜひ試してみてください。
 
-I'll see if I can make it work.
+そして、もし**動かないPANICデータ**がありましたら……
 
-Old PANIC files you made yourself, files downloaded from some long-forgotten BBS, mysterious files found on an old MO disk — even just information about them would be very welcome.
+**こっそり回していただけると、とても嬉しいです。**
 
-It would be fun if this little player helped rediscover a few PANIC files that have been hiding for the last 30 years.
+対応できるように頑張ります。
 
-## Install with M5Burner
+昔作ったPANIC、昔BBSから落としたPANIC、  
+作者も出所もよく分からないけどMOに残っていたPANICなど、  
+「こんなのあったよ」という情報だけでも歓迎です。
 
-panicplayer is currently available through **M5Burner**.
+30年くらいどこかに眠っていたPANICが、これをきっかけに少しでも出てきたら面白いなと思っています。
 
-- [M5Burner official page](https://docs.m5stack.com/en/uiflow/m5burner/intro)
-- [M5Stack official download page](https://docs.m5stack.com/en/download)
+## M5Stack Tab5とは
+
+**M5Stack Tab5** は、**ESP32-P4**（RISC-V）を搭載したポータブルな開発端末です。
+**5インチ 1280×720 IPSタッチディスプレイ**、**32MB PSRAM**、**microSDカードスロット**、スピーカーなどを備えています。
+
+この「画面が広い・メモリもそれなりにある・SDカードと音が使える」という構成が、PANIC専用のX68000互換再生環境を動かすのにちょうどよさそうだったので、今回のターゲットにしました。
+
+- [M5Stack Tab5 公式ドキュメント](https://docs.m5stack.com/ja/core/Tab5)
+
+## M5Burner
+
+現在は **M5Burner** からインストールできます。
+
+- [M5Burner 公式ページ](https://docs.m5stack.com/ja/uiflow/m5burner/intro)
+- [M5Stack 公式ダウンロードページ](https://docs.m5stack.com/ja/download)
 
 **M5Burner Share Code**
 
@@ -47,96 +62,127 @@ panicplayer is currently available through **M5Burner**.
 PDax1LcxZRfUhJyp
 ```
 
-Open M5Burner, use **Share Burn**, and enter the share code above.
+M5Burnerの **Share Burn** から上記コードを入力してください。
 
-## Usage
+## 使い方
 
-Put your `.PAN` files on an SD card and start panicplayer.
+SDカードに `.PAN` ファイルを入れて起動してください。
 
-Choose a PANIC file from the built-in file selector to play it.
+ファイラーからPANICデータを選ぶと再生します。
 
-- Tap a `.PAN` file → Play
-- Tap the screen during playback → `SPACE`
-- Long-press the upper-left corner → Return to the file selector
+- `.PAN` ファイルをタップ → 再生
+- 再生中に画面をタップ → `SPACE`
+- 左上を長押し → ファイラーへ戻る
 
-## Source Code
+## ソースコード
 
-Source code will be published later.
+ソースコードは今後公開予定です。
 
-I'm still changing things quite a bit, so for now the M5Burner build is the easiest way to try it.
+まだいろいろいじっている途中なので、ひとまずM5Burner版で遊んでみてください。
 
-## Looking for PANIC Data
+## PANICデータを探しています
 
-Seriously, this is the part I need help with.
+ここが本題だったりします。
 
-If you have old X68000 media lying around, I'd love to hear about:
+昔のX68000メディアがお手元にありましたら、
 
-- `.PAN` files
-- LZH/ZIP archives containing PANIC data
-- old MO / HDD / CD-R backups
-- BBS file lists
-- README or DOC files
-- filenames you remember
-- even "I think I saw that on some BBS..." stories
+- `.PAN` ファイル
+- PANICデータ入りのLZH / ZIP
+- 昔のMO / HDD / CD-Rのバックアップ
+- BBSのファイル一覧
+- READMEやDOC
+- 覚えているファイル名
+- 「昔どこかのBBSで見た気がする」程度の記憶
 
-If redistribution is difficult because of copyright, **a filename or directory listing alone is still very useful**.
+など、何でも歓迎です。
 
-PANIC data itself belongs to whoever created it, so please respect the original author's wishes.
+著作権などの関係でデータそのものを渡すのが難しい場合は、  
+**ファイル名やディレクトリ一覧だけでも、とても助かります。**
 
-## PANIC V1.38
+PANICデータそのものの扱いについては、それぞれのデータ作者の方針に従ってください。
 
-panicplayer uses the original **PANIC player (`panic.x` V1.38)** binary as part of its playback environment.
+## PANIC V1.38について
 
-The original PANIC V1.38 documentation is included in this repository for reference.  
-Please read the original documents for the full history, usage notes, and distribution terms.
+panicplayerでは、再生環境の一部としてオリジナルの  
+**PANIC再生器 `panic.x` V1.38** のバイナリを使用しています。
 
-Original archive / documentation:
+PANIC V1.38に付属していたオリジナルのドキュメントも、参照できるよう本リポジトリに収録しています。  
+経緯、使用方法、配布条件などについては、ぜひ原文もご覧ください。
+
+オリジナル配布ページ：
 
 - [X68000 LIBRARY - PANIC](http://retropc.net/x68000/software/movie/panic/panic/)
 
-According to the original V1.38 distribution documents:
+V1.38付属ドキュメントによると、
 
-- PANIC was originally written by **Hideya Nagata (pako / ぱこたん / 永田英哉)**
-- `panic.x` V1.38 is based on pako's `panic.x` V1.34, with modifications by **Nashimi (なしみ)**
-- the copyright of PANIC remains with **Hideya Nagata (pako)**
-- the original author explicitly permitted use, redistribution, modification, and commercial use of PANIC
-- rights and distribution conditions for individual `.PAN` data files belong to their respective creators
+- PANICの原作者は **ぱこたん / pako こと 永田英哉さん**
+- `panic.x` V1.38は、pakoさん作の `panic.x` V1.34を元に **なしみさん** が改変
+- PANICの著作権は **永田英哉 (pako)さん** が保有
+- 原作者の宣言により、PANICは利用・配布・改造・商用利用について広く許可
+- 個々の `.PAN` データについては、それぞれのデータ作者の方針に従う
 
-Many thanks to **pako**, **Nashimi**, and everyone who developed, documented, distributed, and created data for PANIC.
+とされています。
 
-## Copyright / Acknowledgements
+**pakoさん、なしみさん、PANICの開発・資料作成・配布・データ制作に関わった皆様に感謝いたします。**
+
+## 著作権・謝辞
 
 ### SHARP X68000
 
-The X68000 computer platform was developed by **Sharp Corporation**.
+X68000は **シャープ株式会社** が開発したコンピュータです。
 
-panicplayer uses X68000 system software made available through the **SHARP PRODUCTS USERS FORUM (FSHARP)** under its original distribution terms. The applicable original license text is included with this repository as:
+panicplayerでは、**シャープ・プロダクツ・ユーザーズ・フォーラム（FSHARP）** を通して無償公開されたX68000用システムソフトウェアを、その当時の使用許諾条件に従って利用しています。
+
+適用されるオリジナルの許諾条件は、本リポジトリの以下のファイルに原文のまま収録しています。
 
 [`LICENSE_SHARP_X68000.txt`](LICENSE_SHARP_X68000.txt)
 
-Please refer to that document for the original terms and conditions. panicplayer is distributed free of charge.
+使用・再配布条件については、必ずこの原文をご参照ください。panicplayerは無償で配布しています。
 
-Original SHARP software library:
+SHARPソフトウェアのオリジナル公開ページ：
 
-- [X68000 LIBRARY - SHARP software](http://retropc.net/x68000/software/sharp/)
+- [X68000 LIBRARY - SHARP ソフトウェア](http://retropc.net/x68000/software/sharp/)
 
-SHARP, X68000, and related software, names, and trademarks remain the property of Sharp Corporation and/or their respective rights holders.
+SHARP、X68000、および関連するソフトウェア、名称、商標等の権利は、シャープ株式会社および各権利者に帰属します。
 
-panicplayer is an unofficial personal project and is **not affiliated with, sponsored by, or endorsed by Sharp Corporation**.
+panicplayerは個人による非公式プロジェクトであり、**シャープ株式会社とは関係なく、同社による承認・協賛を受けたものではありません。**
 
 ### PANIC
 
-PANIC / `panic.x` copyright remains with **Hideya Nagata (pako / 永田英哉)** as stated in the original distribution documents.
+PANIC / `panic.x` の著作権は、オリジナル配布文書の記載どおり  
+**永田英哉 (pako / ぱこたん)さん** に帰属します。
 
-`panic.x` V1.38 includes modifications by **Nashimi (なしみ)**.
+`panic.x` V1.38には **なしみさん** による改変が含まれています。
 
-The original PANIC documentation distributed with V1.38 is included in this repository so that the original authors' notes and distribution conditions remain available alongside the project.
+V1.38のオリジナルドキュメントについても、当時の作者の説明・配布条件をそのまま参照できるよう、本リポジトリに収録しています。
+
+### Musashi
+
+panicplayerでは、68000 CPUの実行コアとして **Karl Stenerudさんの Musashi**（Motorola 680x0エミュレーションエンジン）を使用しています。
+
+**Karl Stenerudさん、およびMusashiの開発に関わった皆様に感謝いたします。**
+
+- [Musashi 公式リポジトリ](https://github.com/kstenerud/Musashi)
+- [サードパーティー表記](THIRD_PARTY_NOTICES.md)
+
+Musashiの著作権表示および許諾文は `THIRD_PARTY_NOTICES.md` に収録しています。
+
+### PX68K
+
+panicplayerのX68000互換部分の実装では、**PX68K** の実装およびハードウェア挙動を参考にしています。
+
+**hissoriiさんをはじめ、WinX68k / xkeropi / PX68Kへと続く開発・移植・資料整備に関わった皆様に感謝いたします。**
+
+- [PX68K 公式リポジトリ](https://github.com/hissorii/px68k)
+- [サードパーティー表記](THIRD_PARTY_NOTICES.md)
+
+panicplayerは独立したプロジェクトであり、PX68Kの公式移植版ではありません。
 
 ### M5Stack
 
-M5Stack, M5Stack Tab5, and M5Burner are products/services of **M5Stack Technology Co., Ltd.**  
-panicplayer is an independent project and is not affiliated with M5Stack.
+M5Stack、M5Stack Tab5、M5Burnerは **M5Stack Technology Co., Ltd.** の製品・サービスです。  
+panicplayerはM5Stackとは独立したプロジェクトです。
 
 ---
 
-**Somewhere out there, an old MO disk is probably still hiding a few `.PAN` files.**
+**あなたのMOの奥底に眠っている `.PAN`、探しています。**
