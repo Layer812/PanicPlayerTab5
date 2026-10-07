@@ -31,7 +31,7 @@ panicplayerは汎用X68000エミュレータを目指したものではなく、
 **M5Burner Share Code**
 
 ```text
-V4giBIe8cPoRwyqc
+WGUybBrwDw4naV65
 ```
 
 M5Burnerの **Share Burn** から上記コードを入力してください。
@@ -46,9 +46,14 @@ microSDカードに `.PAN` ファイルを入れて起動し、PANファイラ�
 - **REPEAT** → SPACE待ちをするPANデータを一定間隔で自動送り
 - **TURBO** → NORMAL / GREEN / RED の負荷プロファイルを切り替え
 - 再生中に画面をタップ → `SPACE`
-- **PANIC** → PANIC QUEST（おまけ）
 
 TURBOはX68000側の再生速度そのものを変えるものではなく、Tab5側の映像・音声処理の負荷バランスを切り替える機能です。選択したモードは起動中そのまま維持されます。
+
+## もっとX68000を楽しみたい方へ
+
+panicplayerはPANIC再生に特化したプレイヤーです。M5Stack Tab5でもっと汎用的なX68000環境を楽しみたい方は、**X68K Tab** もどうぞ。
+
+- [X68K Tab](https://github.com/Layer812/X68KTab5)
 
 ## PANIC V1.38について
 
