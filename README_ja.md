@@ -31,7 +31,7 @@ panicplayerは汎用X68000エミュレータを目指したものではなく、
 **M5Burner Share Code**
 
 ```text
-WGUybBrwDw4naV65
+Kr4WZqevzTJSB3TF
 ```
 
 M5Burnerの **Share Burn** から上記コードを入力してください。
