@@ -6,39 +6,18 @@
 
 [日本語 / Japanese](README.md)
 
-I suddenly felt like watching some old **X68000 PANIC** animations again, so I made a player.
+**panicplayer** is a PANIC player for playing **X68000 PANIC data (`.PAN`)** on the M5Stack Tab5.
 
-I've heard the retro-PC scene can be a slightly scary place sometimes... 😅  
-so, just to be clear:
+PANIC was an animation playback system used on the X68000, combining graphics, sprites, text, and audio.  
+The original `panic.x` player and `.PAN` data files were used to create and share many different works.
 
-**This is only a PANIC player!**
+panicplayer is not intended to be a general-purpose X68000 emulator. It provides an **X68000-compatible environment focused on playing PANIC data** as easily as possible.
 
-It's not intended to be a general-purpose X68000 emulator.  
-It implements just enough of an X68000-compatible environment to play `.PAN` files on an **M5Stack Tab5**.
+## M5Stack Tab5
 
-There is, however, one small problem.
+**M5Stack Tab5** is a portable development terminal built around the ESP32-P4 RISC-V SoC, with a 5-inch 1280×720 IPS touchscreen, 32MB PSRAM, a microSD card slot, and built-in audio hardware.
 
-**I only have one PANIC file.**
-
-I'm pretty sure there used to be tons of them...
-
-So if you have some old PANIC data hiding on an HDD, MO disk, CD-R, or backup somewhere, please give it a try.
-
-And if you happen to have a PANIC file that **doesn't work** with panicplayer...
-
-**I'd be very happy if you quietly sent it my way. :)**
-
-I'll see if I can make it work.
-
-Old PANIC files you made yourself, files downloaded from some long-forgotten BBS, mysterious files found on an old MO disk — even just information about them would be very welcome.
-
-It would be fun if this little player helped rediscover a few PANIC files that have been hiding for the last 30 years.
-
-## What is M5Stack Tab5?
-
-**M5Stack Tab5** is a portable development terminal built around the **ESP32-P4** RISC-V SoC. It has a **5-inch 1280×720 IPS touchscreen**, **32MB PSRAM**, a **microSD card slot**, and built-in audio hardware including a speaker.
-
-That combination turned out to be a rather nice fit for running a small, dedicated X68000-compatible PANIC playback environment.
+panicplayer uses that hardware to run a dedicated X68000-compatible PANIC playback environment.
 
 - [M5Stack Tab5 official documentation](https://docs.m5stack.com/en/core/Tab5)
 
@@ -52,51 +31,30 @@ panicplayer is currently available through **M5Burner**.
 **M5Burner Share Code**
 
 ```text
-PDax1LcxZRfUhJyp
+V4giBIe8cPoRwyqc
 ```
 
 Open M5Burner, use **Share Burn**, and enter the share code above.
 
 ## Usage
 
-Put your `.PAN` files on an SD card and start panicplayer.
-
-Choose a PANIC file from the built-in file selector to play it.
+Put your `.PAN` files on a microSD card, start panicplayer, and choose a PAN file from the built-in file selector.
 
 - Tap a `.PAN` file → Play
+- **BACK** → Return to the PAN file selector
+- **PREV / NEXT** → Move to the previous / next PAN file
+- **REPEAT** → Automatically advances PAN data that waits for SPACE
+- **TURBO** → Cycle through NORMAL / GREEN / RED host-load profiles
 - Tap the screen during playback → `SPACE`
-- Long-press the upper-left corner → Return to the file selector
+- **PANIC** → PANIC QUEST (bonus)
 
-## Source Code
-
-Source code will be published later.
-
-I'm still changing things quite a bit, so for now the M5Burner build is the easiest way to try it.
-
-## Looking for PANIC Data
-
-Seriously, this is the part I need help with.
-
-If you have old X68000 media lying around, I'd love to hear about:
-
-- `.PAN` files
-- LZH/ZIP archives containing PANIC data
-- old MO / HDD / CD-R backups
-- BBS file lists
-- README or DOC files
-- filenames you remember
-- even "I think I saw that on some BBS..." stories
-
-If redistribution is difficult because of copyright, **a filename or directory listing alone is still very useful**.
-
-PANIC data itself belongs to whoever created it, so please respect the original author's wishes.
+TURBO does not change the X68000-side playback speed itself. It changes the balance of video/audio processing on the Tab5 side. The selected mode remains active for the rest of the current run.
 
 ## PANIC V1.38
 
 panicplayer uses the original **PANIC player (`panic.x` V1.38)** binary as part of its playback environment.
 
-The original PANIC V1.38 documentation is included in this repository for reference.  
-Please read the original documents for the full history, usage notes, and distribution terms.
+The original PANIC V1.38 documentation is also included in this repository under `docs/`.
 
 Original archive / documentation:
 
@@ -105,12 +63,25 @@ Original archive / documentation:
 According to the original V1.38 distribution documents:
 
 - PANIC was originally written by **Hideya Nagata (pako / ぱこたん / 永田英哉)**
-- `panic.x` V1.38 is based on pako's `panic.x` V1.34, with modifications by **Nashimi (なしみ)**
+- `panic.x` V1.38 is based on pako's V1.34, with modifications by **Nashimi (なしみ)**
 - the copyright of PANIC remains with **Hideya Nagata (pako)**
 - the original author explicitly permitted use, redistribution, modification, and commercial use of PANIC
 - rights and distribution conditions for individual `.PAN` data files belong to their respective creators
 
 Many thanks to **pako**, **Nashimi**, and everyone who developed, documented, distributed, and created data for PANIC.
+
+If you still have PANIC data on an old HDD, MO disk, CD-R, or backup, give it a try with panicplayer.  
+If you find a PAN file that does not work, a reproduction description and serial log would be very helpful.
+
+## Source Code
+
+Source code will be published later.
+
+Some parts are still being tuned, so the M5Burner build is currently the easiest way to try panicplayer.
+
+## Special Thanks
+
+**Nochi**
 
 ## Copyright / Acknowledgements
 
@@ -166,7 +137,3 @@ panicplayer is an independent project and is not an official PX68K port.
 
 M5Stack, M5Stack Tab5, and M5Burner are products/services of **M5Stack Technology Co., Ltd.**  
 panicplayer is an independent project and is not affiliated with M5Stack.
-
----
-
-**Somewhere out there, an old MO disk is probably still hiding a few `.PAN` files.**
