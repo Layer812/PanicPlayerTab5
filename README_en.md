@@ -31,7 +31,7 @@ panicplayer is currently available through **M5Burner**.
 **M5Burner Share Code**
 
 ```text
-V4giBIe8cPoRwyqc
+WGUybBrwDw4naV65
 ```
 
 Open M5Burner, use **Share Burn**, and enter the share code above.
@@ -46,9 +46,14 @@ Put your `.PAN` files on a microSD card, start panicplayer, and choose a PAN fil
 - **REPEAT** → Automatically advances PAN data that waits for SPACE
 - **TURBO** → Cycle through NORMAL / GREEN / RED host-load profiles
 - Tap the screen during playback → `SPACE`
-- **PANIC** → PANIC QUEST (bonus)
 
 TURBO does not change the X68000-side playback speed itself. It changes the balance of video/audio processing on the Tab5 side. The selected mode remains active for the rest of the current run.
+
+## Looking for a fuller X68000 experience?
+
+panicplayer is intentionally focused on PANIC playback. If you would like to explore a more general-purpose X68000 environment on the M5Stack Tab5, also take a look at **X68K Tab**:
+
+- [X68K Tab](https://github.com/Layer812/X68KTab5)
 
 ## PANIC V1.38
 
