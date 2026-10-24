@@ -87,7 +87,15 @@ If you find a PAN file that does not work, a reproduction description and serial
 
 ## Source Code
 
-The PanicPlayerTab5-specific source is not currently published in this repository. For the X68000 emulation foundation, implementation details, and third-party notices, see [X68K Tab](https://github.com/Layer812/X68KTab5). X68K Tab is a separate project; its repository does not reproduce this exact PANIC Player build by itself.
+The shared X68000 emulation foundation is linked as the [X68K Tab](https://github.com/Layer812/X68KTab5) Git submodule. Clone recursively to fetch it and its M5GFX/M5Unified submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
+```
+
+For an existing clone, run `git submodule update --init --recursive`.
+
+**The PanicPlayerTab5-specific R5Y sources are still being verified and have not yet been published here.** X68K Tab provides the shared foundation but the submodule alone does not reproduce this exact PanicPlayerTab5 R5Y build. The remaining source layout and build instructions will follow once verified.
 
 ## Special Thanks
 
