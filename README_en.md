@@ -78,6 +78,12 @@ Many thanks to **pako**, **Nashimi**, and everyone who developed, documented, di
 If you still have PANIC data on an old HDD, MO disk, CD-R, or backup, give it a try with panicplayer.  
 If you find a PAN file that does not work, a reproduction description and serial log would be very helpful.
 
+## Current tested build (October 24, 2026)
+
+- **R5Y**: PAN playback and the palette correction have been confirmed on an M5Stack Tab5.
+- First-time 256×256 display recovery and replay of another PAN selection in the same session are supported.
+- The embedded DENKO feature is **not included**. Select `.PAN` files from microSD as before.
+
 ## Source Code
 
 Source code will be published later.
