@@ -86,9 +86,7 @@ If you find a PAN file that does not work, a reproduction description and serial
 
 ## Source Code
 
-Source code will be published later.
-
-Some parts are still being tuned, so the M5Burner build is currently the easiest way to try panicplayer.
+The PanicPlayerTab5-specific source is not currently published in this repository. For the X68000 emulation foundation, implementation details, and third-party notices, see [X68K Tab](https://github.com/Layer812/X68KTab5). X68K Tab is a separate project; its repository does not reproduce this exact PANIC Player build by itself.
 
 ## Special Thanks
 
@@ -96,55 +94,15 @@ Some parts are still being tuned, so the M5Burner build is currently the easiest
 
 ## Copyright / Acknowledgements
 
-### SHARP X68000
+- **New code in Panic Player Tab5**: © 2026 Layer812.
+- **PANIC / `PANIC.X`**: Original author and copyright holder **Hideya Nagata (pako / ぱこたん)**; V1.38 modifications by **Nashimi (なしみ)**. The original documents and conditions take precedence.
+- **Musashi**: © Karl Stenerud and contributors (MIT License).
+- **PX68K / WinX68k / xkeropi**: Thanks to all developers, porters, and hardware researchers in this lineage.
+- **Individual `.PAN` works**: Rights to animations, music, and data remain with their respective creators and rights holders.
+- **SHARP X68000**: Names and trademarks belong to SHARP and their respective rights holders. This is an independent unofficial project, not endorsed by SHARP.
 
-The X68000 computer platform was developed by **Sharp Corporation**.
+**Permission to distribute PANIC itself and permission to distribute individual PAN files are separate.** For original and related terms, see [THIRD_PARTY_NOTICES.md](https://github.com/Layer812/PanicPlayerWeb/blob/main/THIRD_PARTY_NOTICES.md), [LICENSE_PANIC_X.txt](https://github.com/Layer812/PanicPlayerWeb/blob/main/LICENSE_PANIC_X.txt), [PANIC_V1.38_NOTICE.txt](https://github.com/Layer812/PanicPlayerWeb/blob/main/PANIC_V1.38_NOTICE.txt), and the [original PANIC documents](https://github.com/Layer812/PanicPlayerTab5/tree/main/docs). Also see the [SHARP/FSHARP terms](LICENSE_SHARP_X68000.txt) and [X68K Tab third-party notices](https://github.com/Layer812/X68KTab5/blob/main/THIRD_PARTY_NOTICES.md).
 
-panicplayer uses X68000 system software made available through the **SHARP PRODUCTS USERS FORUM (FSHARP)** under its original distribution terms. The applicable original license text is included with this repository as:
+**The Panic Player Web repository's MIT license covers only Layer812-owned new Web code.** It does not automatically apply to this Tab5 repository or to third-party code, binaries, or PAN files. Original terms of each component take precedence.
 
-[`LICENSE_SHARP_X68000.txt`](LICENSE_SHARP_X68000.txt)
-
-Please refer to that document for the original terms and conditions. panicplayer is distributed free of charge.
-
-Original SHARP software library:
-
-- [X68000 LIBRARY - SHARP software](http://retropc.net/x68000/software/sharp/)
-
-SHARP, X68000, and related software, names, and trademarks remain the property of Sharp Corporation and/or their respective rights holders.
-
-panicplayer is an unofficial personal project and is **not affiliated with, sponsored by, or endorsed by Sharp Corporation**.
-
-### PANIC
-
-PANIC / `panic.x` copyright remains with **Hideya Nagata (pako / 永田英哉)** as stated in the original distribution documents.
-
-`panic.x` V1.38 includes modifications by **Nashimi (なしみ)**.
-
-The original PANIC documentation distributed with V1.38 is included in this repository so that the original authors' notes and distribution conditions remain available alongside the project.
-
-### Musashi
-
-panicplayer uses **Musashi**, Karl Stenerud's portable Motorola 680x0 emulation engine, for 68000 CPU emulation.
-
-Many thanks to **Karl Stenerud** and the Musashi contributors.
-
-- [Musashi official repository](https://github.com/kstenerud/Musashi)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-The original Musashi copyright and permission notice is reproduced in `THIRD_PARTY_NOTICES.md`.
-
-### PX68K
-
-Parts of panicplayer's X68000 compatibility implementation were developed with reference to **PX68K** and its documented hardware behavior.
-
-Many thanks to **hissorii** and all of the authors and contributors in the WinX68k / xkeropi / PX68K lineage whose work made X68000 emulation and documentation available to later projects.
-
-- [PX68K official repository](https://github.com/hissorii/px68k)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-panicplayer is an independent project and is not an official PX68K port.
-
-### M5Stack
-
-M5Stack, M5Stack Tab5, and M5Burner are products/services of **M5Stack Technology Co., Ltd.**  
-panicplayer is an independent project and is not affiliated with M5Stack.
+Thank you to everyone who has created and preserved the PANIC and X68000 culture.
