@@ -31,7 +31,7 @@ panicplayerは汎用X68000エミュレータを目指したものではなく、
 **M5Burner Share Code**
 
 ```text
-Kr4WZqevzTJSB3TF
+UjzO1MYxSNIeYBiu
 ```
 
 M5Burnerの **Share Burn** から上記コードを入力してください。
@@ -82,9 +82,7 @@ V1.38付属ドキュメントによると、
 
 ## ソースコード
 
-ソースコードは今後公開予定です。
-
-まだ調整中の部分もあるため、まずはM5Burner版でお試しください。
+PanicPlayerTab5固有のソースコードは現在このリポジトリでは公開していません。X68000互換環境の基盤コード・実装の詳細・第三者ライセンスについては [X68K Tab](https://github.com/Layer812/X68KTab5) を参照してください。X68K Tabは別プロジェクトであり、そのリポジトリだけで本プレイヤーの同一版を再現できるという意味ではありません。
 
 ## Special Thanks
 
@@ -92,57 +90,15 @@ V1.38付属ドキュメントによると、
 
 ## 著作権・謝辞
 
-### SHARP X68000
+- **Panic Player Tab5の新規コード**：© 2026 Layer812
+- **PANIC / `PANIC.X`**：原作者・著作権者 **永田英哉（pako／ぱこたん）さん**、V1.38改訂 **なしみさん**。原版の文書・条件を優先します
+- **Musashi**：© Karl Stenerudおよび貢献者（MIT License）
+- **PX68K / WinX68k / xkeropi**：X68000エミュレータの開発・移植・調査に携わった皆様
+- **各 `.PAN` 作品**：映像・音楽・データの権利は各制作・権利者に帰属します
+- **SHARP X68000**：SHARPおよび各権利者の名称・商標。非公式・非公認の個人プロジェクトです
 
-X68000は **シャープ株式会社** が開発したコンピュータです。
+**PANIC本体の配布許諾と、PANデータの配布許諾は別です。** 詳細・一次資料は [THIRD_PARTY_NOTICES.md](https://github.com/Layer812/PanicPlayerWeb/blob/main/THIRD_PARTY_NOTICES.md)、[LICENSE_PANIC_X.txt](https://github.com/Layer812/PanicPlayerWeb/blob/main/LICENSE_PANIC_X.txt)、[PANIC_V1.38_NOTICE.txt](https://github.com/Layer812/PanicPlayerWeb/blob/main/PANIC_V1.38_NOTICE.txt) を参照してください。PANICのオリジナル文書は [PanicPlayerTab5のdocs](https://github.com/Layer812/PanicPlayerTab5/tree/main/docs) に保存されています。[SHARP/FSHARPの原許諾条件](LICENSE_SHARP_X68000.txt) と [X68K Tabの第三者ライセンス詳細](https://github.com/Layer812/X68KTab5/blob/main/THIRD_PARTY_NOTICES.md) も参照してください。
 
-panicplayerでは、**シャープ・プロダクツ・ユーザーズ・フォーラム（FSHARP）** を通して無償公開されたX68000用システムソフトウェアを、その当時の使用許諾条件に従って利用しています。
+**Panic Player WebのMITライセンスは、Layer812が権利を持つWeb版の新規実装部分にのみ適用されます。** 本Tab5リポジトリや第三者のコード・実行形式・各PANへ自動的に適用されるものではありません。各素材の原許諾条件を優先します。
 
-適用されるオリジナルの許諾条件は、本リポジトリの以下のファイルに原文のまま収録しています。
-
-[`LICENSE_SHARP_X68000.txt`](LICENSE_SHARP_X68000.txt)
-
-使用・再配布条件については、必ずこの原文をご参照ください。panicplayerは無償で配布しています。
-
-SHARPソフトウェアのオリジナル公開ページ：
-
-- [X68000 LIBRARY - SHARP ソフトウェア](http://retropc.net/x68000/software/sharp/)
-
-SHARP、X68000、および関連するソフトウェア、名称、商標等の権利は、シャープ株式会社および各権利者に帰属します。
-
-panicplayerは個人による非公式プロジェクトであり、**シャープ株式会社とは関係なく、同社による承認・協賛を受けたものではありません。**
-
-### PANIC
-
-PANIC / `panic.x` の著作権は、オリジナル配布文書の記載どおり **永田英哉 (pako / ぱこたん)さん** に帰属します。
-
-`panic.x` V1.38には **なしみさん** による改変が含まれています。
-
-V1.38のオリジナルドキュメントについても、当時の作者の説明・配布条件をそのまま参照できるよう本リポジトリに収録しています。
-
-### Musashi
-
-panicplayerでは、68000 CPUの実行コアとして **Karl Stenerudさんの Musashi**（Motorola 680x0エミュレーションエンジン）を使用しています。
-
-**Karl Stenerudさん、およびMusashiの開発に関わった皆様に感謝いたします。**
-
-- [Musashi 公式リポジトリ](https://github.com/kstenerud/Musashi)
-- [サードパーティー表記](THIRD_PARTY_NOTICES.md)
-
-Musashiの著作権表示および許諾文は `THIRD_PARTY_NOTICES.md` に収録しています。
-
-### PX68K
-
-panicplayerのX68000互換部分の実装では、**PX68K** の実装およびハードウェア挙動を参考にしています。
-
-**hissoriiさんをはじめ、WinX68k / xkeropi / PX68Kへと続く開発・移植・資料整備に関わった皆様に感謝いたします。**
-
-- [PX68K 公式リポジトリ](https://github.com/hissorii/px68k)
-- [サードパーティー表記](THIRD_PARTY_NOTICES.md)
-
-panicplayerは独立したプロジェクトであり、PX68Kの公式移植版ではありません。
-
-### M5Stack
-
-M5Stack、M5Stack Tab5、M5Burnerは **M5Stack Technology Co., Ltd.** の製品・サービスです。  
-panicplayerはM5Stackとは独立したプロジェクトです。
+PANICとX68000の文化を支え、貴重なデータを保存されてきた皆様に感謝します。
