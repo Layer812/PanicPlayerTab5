@@ -31,7 +31,7 @@ panicplayer is currently available through **M5Burner**.
 **M5Burner Share Code**
 
 ```text
-Kr4WZqevzTJSB3TF
+UjzO1MYxSNIeYBiu
 ```
 
 Open M5Burner, use **Share Burn**, and enter the share code above.
