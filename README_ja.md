@@ -49,6 +49,8 @@ microSDカードに `.PAN` ファイルを入れて起動し、PANファイラ�
 
 TURBOはX68000側の再生速度そのものを変えるものではなく、Tab5側の映像・音声処理の負荷バランスを切り替える機能です。選択したモードは起動中そのまま維持されます。
 
+サンプルとして [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN) を用意しました。
+
 ## もっとX68000を楽しみたい方へ
 
 panicplayerはPANIC再生に特化したプレイヤーです。M5Stack Tab5でもっと汎用的なX68000環境を楽しみたい方は、**X68K Tab** もどうぞ。
