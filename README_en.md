@@ -49,6 +49,8 @@ Put your `.PAN` files on a microSD card, start panicplayer, and choose a PAN fil
 
 TURBO does not change the X68000-side playback speed itself. It changes the balance of video/audio processing on the Tab5 side. The selected mode remains active for the rest of the current run.
 
+A sample PAN file, [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN), is available.
+
 ## Looking for a fuller X68000 experience?
 
 panicplayer is intentionally focused on PANIC playback. If you would like to explore a more general-purpose X68000 environment on the M5Stack Tab5, also take a look at **X68K Tab**:
@@ -82,7 +84,6 @@ If you find a PAN file that does not work, a reproduction description and serial
 
 - **R5Y**: PAN playback and the palette correction have been confirmed on an M5Stack Tab5.
 - First-time 256×256 display recovery and replay of another PAN selection in the same session are supported.
-- The embedded DENKO feature is **not included**. Select `.PAN` files from microSD as before.
 
 ## Source Code
 
