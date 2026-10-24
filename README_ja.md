@@ -84,7 +84,15 @@ V1.38付属ドキュメントによると、
 
 ## ソースコード
 
-PanicPlayerTab5固有のソースコードは現在このリポジトリでは公開していません。X68000互換環境の基盤コード・実装の詳細・第三者ライセンスについては [X68K Tab](https://github.com/Layer812/X68KTab5) を参照してください。X68K Tabは別プロジェクトであり、そのリポジトリだけで本プレイヤーの同一版を再現できるという意味ではありません。
+X68000エミュレータの共通基盤は、[X68K Tab](https://github.com/Layer812/X68KTab5) をGitサブモジュールとして参照します。依存するM5GFX/M5Unifiedも含め、次のコマンドで取得できます。
+
+```bash
+git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
+```
+
+すでにcloneしている場合は、`git submodule update --init --recursive` を実行してください。
+
+**PanicPlayerTab5固有のR5Yソースは公開用の整理・照合中で、現時点では未掲載です。** X68K Tabは共通基盤ですが、このサブモジュールだけでPanicPlayerTab5 R5Yを再現ビルドできるわけではありません。ソースの公開対象とビルド手順は検証後に追加します。
 
 ## Special Thanks
 
