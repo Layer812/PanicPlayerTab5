@@ -1,0 +1,6 @@
+# Preserve the exact nine native-build-PASS overlay source bytes.
+# Eight LF files remain diffable; sysport.c intentionally keeps CRLF bytes.
+overlays/src/* text eol=lf
+overlays/components/px68k/x68k/hostfs.c text eol=lf
+overlays/components/px68k/x68k/palette.c text eol=lf
+overlays/components/px68k/x68k/sysport.c -text

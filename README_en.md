@@ -87,15 +87,13 @@ If you find a PAN file that does not work, a reproduction description and serial
 
 ## Source Code
 
-The shared X68000 emulation foundation is linked as the [X68K Tab](https://github.com/Layer812/X68KTab5) Git submodule. Clone recursively to fetch it and its M5GFX/M5Unified submodules:
+R5Y-specific PanicPlayerTab5 sources are available in [overlays/src](overlays/src). The shared X68000 base is the pinned [X68K Tab](https://github.com/Layer812/X68KTab5) Git submodule. The PX68K-derived R5Y changes are in [overlays/components/px68k](overlays/components/px68k). See [source provenance and hashes](SOURCE_PROVENANCE.md).
 
 ```bash
 git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
 ```
 
-For an existing clone, run `git submodule update --init --recursive`.
-
-**The PanicPlayerTab5-specific R5Y sources are still being verified and have not yet been published here.** X68K Tab provides the shared foundation but the submodule alone does not reproduce this exact PanicPlayerTab5 R5Y build. The remaining source layout and build instructions will follow once verified.
+On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an isolated work directory, without flashing. FIX4 previously compiled successfully; a fresh post-publication clone and hardware behavior have not yet been revalidated.
 
 ## Special Thanks
 

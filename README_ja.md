@@ -84,15 +84,13 @@ V1.38付属ドキュメントによると、
 
 ## ソースコード
 
-X68000エミュレータの共通基盤は、[X68K Tab](https://github.com/Layer812/X68KTab5) をGitサブモジュールとして参照します。依存するM5GFX/M5Unifiedも含め、次のコマンドで取得できます。
+PanicPlayerTab5固有のR5Yソースは [overlays/src](overlays/src) に公開しています。共通X68000基盤は固定コミットの [X68K Tab](https://github.com/Layer812/X68KTab5) サブモジュールを利用し、PX68K由来のR5Y変更は [overlays/components/px68k](overlays/components/px68k) にあります。[ソースの出自・ハッシュ](SOURCE_PROVENANCE.md) を参照してください。
 
 ```bash
 git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
 ```
 
-すでにcloneしている場合は、`git submodule update --init --recursive` を実行してください。
-
-**PanicPlayerTab5固有のR5Yソースは公開用の整理・照合中で、現時点では未掲載です。** X68K Tabは共通基盤ですが、このサブモジュールだけでPanicPlayerTab5 R5Yを再現ビルドできるわけではありません。ソースの公開対象とビルド手順は検証後に追加します。
+Windows・ESP-IDF 5.5.4環境では `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` で隔離ビルドできます。これはFIX4の実ビルドPASSに基づくソース構成ですが、GitHub公開後の取得環境での再現試験と実機再検証は別です。実機へのFlashは行いません。
 
 ## Special Thanks
 

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "pin_x68ktab": "b8a5f29c747f4345060b32a34f190f9339d5b577",
+  "files": [
+    {
+      "path": "src/main.c",
+      "bytes": 142906,
+      "sha256": "32ad9be7a1a4d343495a7e45ae582953391a5214a80ab33276c58cf84ea5d859",
+      "verified_against_report": true,
+      "status": "Tab5 specific"
+    },
+    {
+      "path": "src/tab5_panic.cpp",
+      "bytes": 71719,
+      "sha256": "6817623c9f5fe00b35fcdbf231449346f49c037c90a0ec67e2ab2d2d81caecd1",
+      "verified_against_report": true,
+      "status": "Tab5 specific"
+    },
+    {
+      "path": "src/tab5_panic.h",
+      "bytes": 2366,
+      "sha256": "e695d295276f72cf28c6f673cb4a5402cc29755b8965c96c8d251152b09c1358",
+      "verified_against_report": true,
+      "status": "Tab5 specific"
+    },
+    {
+      "path": "src/tab5_screen_manager.c",
+      "bytes": 84340,
+      "sha256": "bcf7bb21019c3e96347c865d6326d8b33b54e2b5354e49dcce0d0e3e59e3fe5c",
+      "verified_against_report": true,
+      "status": "Tab5 specific"
+    },
+    {
+      "path": "components/px68k/x68k/hostfs.c",
+      "bytes": 70684,
+      "sha256": "70c0b36e80ace55d429b3684695f2b411a616740e241e2d26e537c5e9201b755",
+      "verified_against_report": true,
+      "status": "PX68K-derived: retain upstream rights"
+    },
+    {
+      "path": "components/px68k/x68k/palette.c",
+      "bytes": 12575,
+      "sha256": "1684e141e04da1f182ff9aff938a9be658fc1e7f8c8171ac301aca2be7bbaa5a",
+      "verified_against_report": true,
+      "status": "PX68K-derived: retain upstream rights"
+    },
+    {
+      "path": "components/px68k/x68k/sysport.c",
+      "bytes": 2069,
+      "sha256": "24ce7eae5a9a8364f40ef7130a1a7a63350bfb41abab7842c3a13f66c936e603",
+      "verified_against_report": true,
+      "status": "PX68K-derived: retain upstream rights"
+    },
+    {
+      "path": "src/tab5_video.h",
+      "bytes": 6048,
+      "sha256": "6a9a9910740b9a452e16c0ae2286318571fc93a54747f59db6fdd13f2bc45686",
+      "status": "Tab5 R5Y screen/UI implementation",
+      "verified_against_report": true
+    },
+    {
+      "path": "src/tab5_video.cpp",
+      "bytes": 250663,
+      "sha256": "3c50b7172f4c39a7124a3d5a04a69989fb8441b939b6c77031321999bab658d4",
+      "status": "Tab5 R5Y screen/UI implementation",
+      "verified_against_report": true
+    }
+  ],
+  "purpose": "FIX4 9-file standalone integration (7 core overlays + 2 R5Y video/UI)"
+}
