@@ -51,6 +51,14 @@ TURBOはX68000側の再生速度そのものを変えるものではなく、Tab
 
 サンプルとして [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN) を用意しました。
 
+## Z-MUSICについて（次期Production方針）
+
+今後のpanicplayerは、X68000で使われていた **Z-MUSIC 2.08の実常駐ドライバ**を音楽再生の基本とし、オリジナルの **PANIC.X V1.38** による再生を重視します。FMレジスタを直接制御する特別対応の追究は、いったん終了します。
+
+開発版ではZ-MUSICの常駐・FM発音と、R7系でのPAN映像の継続表示を実機で確認しています。ただし **FM音声に「ジジジ」というノイズが重なる場合がある**ことは既知の制限です。映像や音声の改善実績は、すべて同一の正式ファームウェアで確認されたものではありません。
+
+**この内容は次期版の開発方針です。現在のM5Burner配布版へZ-MUSIC対応版が反映済みであることを意味しません。** 完全なソースと実機確認済みBINを一致させた後に正式化します。
+
 ## もっとX68000を楽しみたい方へ
 
 panicplayerはPANIC再生に特化したプレイヤーです。M5Stack Tab5でもっと汎用的なX68000環境を楽しみたい方は、**X68K Tab** もどうぞ。
@@ -110,3 +118,24 @@ Windows・ESP-IDF 5.5.4環境では `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` で隔離
 **Panic Player WebのMITライセンスは、Layer812が権利を持つWeb版の新規実装部分にのみ適用されます。** 本Tab5リポジトリや第三者のコード・実行形式・各PANへ自動的に適用されるものではありません。各素材の原許諾条件を優先します。
 
 PANICとX68000の文化を支え、貴重なデータを保存されてきた皆様に感謝します。
+
+## デンコ（仮称）— 漫画ギャラリー
+
+PANICサンプルにも登場する「デンコ（仮称）」の漫画を掲載しています。**現在は -1 ～ 4 を公開中**。**5 ～ 8 は順次追加予定**です。
+
+サムネイルをクリックすると元の画像を開けます。
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denko-1.png"><img src="./denko-1.png" width="185" alt="デンコ（仮称）漫画 -1"></a><p><strong>-1</strong></p></td>
+  <td align="center" width="33%"><a href="./denko0.png"><img src="./denko0.png" width="185" alt="デンコ（仮称）漫画 0"></a><p><strong>0</strong></p></td>
+  <td align="center" width="33%"><a href="./denko1.png"><img src="./denko1.png" width="185" alt="デンコ（仮称）漫画 1"></a><p><strong>1</strong></p></td>
+</tr>
+<tr>
+  <td align="center" width="33%"><a href="./denko2.png"><img src="./denko2.png" width="185" alt="デンコ（仮称）漫画 2"></a><p><strong>2</strong></p></td>
+  <td align="center" width="33%"><a href="./denko3.png"><img src="./denko3.png" width="185" alt="デンコ（仮称）漫画 3"></a><p><strong>3</strong></p></td>
+  <td align="center" width="33%"><a href="./denko4.png"><img src="./denko4.png" width="185" alt="デンコ（仮称）漫画 4"></a><p><strong>4</strong></p></td>
+</tr>
+</table>
+
+※漫画画像の取り扱いは、PANIC.Xや各 `.PAN` データの配布条件とは別です。
