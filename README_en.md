@@ -101,6 +101,12 @@ git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
 
 On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an isolated work directory, without flashing. FIX4 previously compiled successfully; a fresh post-publication clone and hardware behavior have not yet been revalidated.
 
+## Tool used to create PAN works
+
+Some PAN works were created with **[panicCreationKit](https://github.com/yagennankoz/panicCreationKit)** by **Nankotsu (yagennankoz)**, a toolkit for generating X68000 PANIC `.PAN` files from image sequences, video, and audio, including support for Z-MUSIC-based FM sound.
+
+Many thanks to Nankotsu for making this creation toolkit available. This is an *authoring tool*, not a component bundled into the Panic Player playback engine.
+
 ## Special Thanks
 
 **Nochi**
