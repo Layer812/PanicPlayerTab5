@@ -31,7 +31,7 @@ panicplayerは汎用X68000エミュレータを目指したものではなく、
 **M5Burner Share Code**
 
 ```text
-UjzO1MYxSNIeYBiu
+nsDMO5hHzVw4nB1U
 ```
 
 M5Burnerの **Share Burn** から上記コードを入力してください。
@@ -50,6 +50,12 @@ microSDカードに `.PAN` ファイルを入れて起動し、PANファイラ�
 TURBOはX68000側の再生速度そのものを変えるものではなく、Tab5側の映像・音声処理の負荷バランスを切り替える機能です。選択したモードは起動中そのまま維持されます。
 
 サンプルとして [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN) を用意しました。
+
+## Z-MUSICについて
+
+音楽再生には、X68000用音楽ドライバ **Z-MUSIC 2.08** を標準として採用します。Z-MUSICの作者は **西川善司氏** です。
+
+Z-MUSICの著作権・利用条件と原資料は、[Z-MUSIC 2.08の権利表記](docs/ZMUSIC_2_08_NOTICE.md) に記載しています。
 
 ## もっとX68000を楽しみたい方へ
 
@@ -105,6 +111,7 @@ Windows・ESP-IDF 5.5.4環境では `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` で隔離
 
 - **Panic Player Tab5の新規コード**：© 2026 Layer812
 - **PANIC / `PANIC.X`**：原作者・著作権者 **永田英哉（pako／ぱこたん）さん**、V1.38改訂 **なしみさん**。原版の文書・条件を優先します
+- **Z-MUSIC SYSTEM v2.08**：著作権者 **西川善司氏**。[権利表記と原資料](docs/ZMUSIC_2_08_NOTICE.md)を参照してください。
 - **Musashi**：© Karl Stenerudおよび貢献者（MIT License）
 - **PX68K / WinX68k / xkeropi**：X68000エミュレータの開発・移植・調査に携わった皆様
 - **各 `.PAN` 作品**：映像・音楽・データの権利は各制作・権利者に帰属します
@@ -115,3 +122,28 @@ Windows・ESP-IDF 5.5.4環境では `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` で隔離
 **Panic Player WebのMITライセンスは、Layer812が権利を持つWeb版の新規実装部分にのみ適用されます。** 本Tab5リポジトリや第三者のコード・実行形式・各PANへ自動的に適用されるものではありません。各素材の原許諾条件を優先します。
 
 PANICとX68000の文化を支え、貴重なデータを保存されてきた皆様に感謝します。
+
+## デンコ（仮称）の漫画
+
+「このPanic Player関連の営みが、もし『電脳倶楽部』の企画だったら？」という仮想空間を舞台にした漫画を掲載しています。**現在は -1 ～ 4 を公開中**。**5 ～ 8 は順次追加予定**です。
+
+漫画の中でたびたび登場する **「FM音源で歌うPanic」** は、ブラウザ版でも再生できます。**[「FM音源で歌うPanic」を見る・再生する](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**
+
+サムネイルをクリックすると元の画像を開けます。
+
+※実際の「電脳倶楽部」による公式企画・公式作品ではなく、架空の設定に基づく創作です。
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denko-1.png"><img src="./denko-1.png" width="185" alt="デンコ（仮称）漫画 -1"></a><p><strong>-1</strong></p></td>
+  <td align="center" width="33%"><a href="./denko0.png"><img src="./denko0.png" width="185" alt="デンコ（仮称）漫画 0"></a><p><strong>0</strong></p></td>
+  <td align="center" width="33%"><a href="./denko1.png"><img src="./denko1.png" width="185" alt="デンコ（仮称）漫画 1"></a><p><strong>1</strong></p></td>
+</tr>
+<tr>
+  <td align="center" width="33%"><a href="./denko2.png"><img src="./denko2.png" width="185" alt="デンコ（仮称）漫画 2"></a><p><strong>2</strong></p></td>
+  <td align="center" width="33%"><a href="./denko3.png"><img src="./denko3.png" width="185" alt="デンコ（仮称）漫画 3"></a><p><strong>3</strong></p></td>
+  <td align="center" width="33%"><a href="./denko4.png"><img src="./denko4.png" width="185" alt="デンコ（仮称）漫画 4"></a><p><strong>4</strong></p></td>
+</tr>
+</table>
+
+※漫画画像の取り扱いは、PANIC.Xや各 `.PAN` データの配布条件とは別です。

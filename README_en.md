@@ -31,7 +31,7 @@ panicplayer is currently available through **M5Burner**.
 **M5Burner Share Code**
 
 ```text
-UjzO1MYxSNIeYBiu
+nsDMO5hHzVw4nB1U
 ```
 
 Open M5Burner, use **Share Burn**, and enter the share code above.
@@ -50,6 +50,12 @@ Put your `.PAN` files on a microSD card, start panicplayer, and choose a PAN fil
 TURBO does not change the X68000-side playback speed itself. It changes the balance of video/audio processing on the Tab5 side. The selected mode remains active for the rest of the current run.
 
 A sample PAN file, [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN), is available.
+
+## Z-MUSIC
+
+The music playback configuration uses **Z-MUSIC SYSTEM v2.08**, the X68000 music driver created by **Zenji Nishikawa (西川善司)**.
+
+See the [Z-MUSIC v2.08 copyright and redistribution notice](docs/ZMUSIC_2_08_NOTICE.md) for original documentation and attribution.
 
 ## Looking for a fuller X68000 experience?
 
@@ -103,6 +109,7 @@ On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an i
 
 - **New code in Panic Player Tab5**: © 2026 Layer812.
 - **PANIC / `PANIC.X`**: Original author and copyright holder **Hideya Nagata (pako / ぱこたん)**; V1.38 modifications by **Nashimi (なしみ)**. The original documents and conditions take precedence.
+- **Z-MUSIC SYSTEM v2.08**: © Zenji Nishikawa (西川善司). See the [Z-MUSIC rights notice](docs/ZMUSIC_2_08_NOTICE.md).
 - **Musashi**: © Karl Stenerud and contributors (MIT License).
 - **PX68K / WinX68k / xkeropi**: Thanks to all developers, porters, and hardware researchers in this lineage.
 - **Individual `.PAN` works**: Rights to animations, music, and data remain with their respective creators and rights holders.
@@ -113,3 +120,28 @@ On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an i
 **The Panic Player Web repository's MIT license covers only Layer812-owned new Web code.** It does not automatically apply to this Tab5 repository or to third-party code, binaries, or PAN files. Original terms of each component take precedence.
 
 Thank you to everyone who has created and preserved the PANIC and X68000 culture.
+
+## Denko (working title) — comic
+
+What if the activities surrounding Panic Player were a project of **Den-no Club (電脳倶楽部)**? This comic explores an imaginary world built around that premise. **Episodes -1 through 4** are available, with **5 through 8** planned.
+
+The **“FM音源で歌うPanic” (FM-singing PANIC)** featured throughout the comic can be watched and played in your browser: **[Play FM音源で歌うPanic](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**.
+
+Click a thumbnail to open the full-size image.
+
+*This is an independent fictional premise, not an official Den-no Club project or publication.*
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denko-1.png"><img src="./denko-1.png" width="185" alt="Denko (working title), comic -1"></a><p><strong>-1</strong></p></td>
+  <td align="center" width="33%"><a href="./denko0.png"><img src="./denko0.png" width="185" alt="Denko (working title), comic 0"></a><p><strong>0</strong></p></td>
+  <td align="center" width="33%"><a href="./denko1.png"><img src="./denko1.png" width="185" alt="Denko (working title), comic 1"></a><p><strong>1</strong></p></td>
+</tr>
+<tr>
+  <td align="center" width="33%"><a href="./denko2.png"><img src="./denko2.png" width="185" alt="Denko (working title), comic 2"></a><p><strong>2</strong></p></td>
+  <td align="center" width="33%"><a href="./denko3.png"><img src="./denko3.png" width="185" alt="Denko (working title), comic 3"></a><p><strong>3</strong></p></td>
+  <td align="center" width="33%"><a href="./denko4.png"><img src="./denko4.png" width="185" alt="Denko (working title), comic 4"></a><p><strong>4</strong></p></td>
+</tr>
+</table>
+
+The comics are separate works; permissions for PANIC.X and .PAN files do not automatically cover these images.
