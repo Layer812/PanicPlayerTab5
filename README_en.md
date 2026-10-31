@@ -51,6 +51,14 @@ TURBO does not change the X68000-side playback speed itself. It changes the bala
 
 A sample PAN file, [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN), is available.
 
+## Z-MUSIC: direction for the next production release
+
+The next version of panicplayer is intended to use the **authentic resident Z-MUSIC 2.08 driver** as its standard music path, with playback through the original **PANIC.X V1.38**. Further special-case development for direct FM-register playback is on hold.
+
+Development builds have demonstrated genuine Z-MUSIC residency and FM playback, as well as continued PAN video display in the R7 series. **An audible buzzing/gritty FM noise remains a known limitation** in some tests. These observations were made across different development builds; they are not proof of one fully validated production firmware.
+
+**This is a development direction, not an announcement that the current M5Burner image includes the new Z-MUSIC configuration.** The public source and physical firmware must be matched and verified before release.
+
 ## Looking for a fuller X68000 experience?
 
 panicplayer is intentionally focused on PANIC playback. If you would like to explore a more general-purpose X68000 environment on the M5Stack Tab5, also take a look at **X68K Tab**:
@@ -113,3 +121,24 @@ On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an i
 **The Panic Player Web repository's MIT license covers only Layer812-owned new Web code.** It does not automatically apply to this Tab5 repository or to third-party code, binaries, or PAN files. Original terms of each component take precedence.
 
 Thank you to everyone who has created and preserved the PANIC and X68000 culture.
+
+## Denko (working title) — comic gallery
+
+A comic featuring Denko, who also appears in a PANIC sample. **Episodes -1 through 4** are available; **5 through 8** are planned.
+
+Click any thumbnail to open the full-size image.
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denko-1.png"><img src="./denko-1.png" width="185" alt="Denko (working title), comic -1"></a><p><strong>-1</strong></p></td>
+  <td align="center" width="33%"><a href="./denko0.png"><img src="./denko0.png" width="185" alt="Denko (working title), comic 0"></a><p><strong>0</strong></p></td>
+  <td align="center" width="33%"><a href="./denko1.png"><img src="./denko1.png" width="185" alt="Denko (working title), comic 1"></a><p><strong>1</strong></p></td>
+</tr>
+<tr>
+  <td align="center" width="33%"><a href="./denko2.png"><img src="./denko2.png" width="185" alt="Denko (working title), comic 2"></a><p><strong>2</strong></p></td>
+  <td align="center" width="33%"><a href="./denko3.png"><img src="./denko3.png" width="185" alt="Denko (working title), comic 3"></a><p><strong>3</strong></p></td>
+  <td align="center" width="33%"><a href="./denko4.png"><img src="./denko4.png" width="185" alt="Denko (working title), comic 4"></a><p><strong>4</strong></p></td>
+</tr>
+</table>
+
+The comics are separate works; permissions for PANIC.X and .PAN files do not automatically cover these images.
