@@ -98,6 +98,12 @@ git clone --recurse-submodules https://github.com/Layer812/PanicPlayerTab5.git
 
 Windows・ESP-IDF 5.5.4環境では `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` で隔離ビルドできます。これはFIX4の実ビルドPASSに基づくソース構成ですが、GitHub公開後の取得環境での再現試験と実機再検証は別です。実機へのFlashは行いません。
 
+## PAN制作に使用したツール
+
+PAN作品の制作には、**ナンコツさん（yagennankoz）**が公開されている **[panicCreationKit](https://github.com/yagennankoz/panicCreationKit)** を使用させていただいています。PNG連番・動画・音声などからX68000の「ぱにっく」用 `.PAN` データを制作でき、Z-MUSICを利用したFM音源にも対応するツール群です。
+
+便利な制作環境を公開してくださったナンコツさんに感謝いたします。※制作時に使用したツールであり、Panic Playerの再生エンジンに組み込んでいるものではありません。
+
 ## Special Thanks
 
 **Nochiさん**
