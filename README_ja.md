@@ -31,7 +31,7 @@ panicplayerは汎用X68000エミュレータを目指したものではなく、
 **M5Burner Share Code**
 
 ```text
-UjzO1MYxSNIeYBiu
+nsDMO5hHzVw4nB1U
 ```
 
 M5Burnerの **Share Burn** から上記コードを入力してください。
@@ -121,6 +121,8 @@ PANICとX68000の文化を支え、貴重なデータを保存されてきた皆
 ## デンコ（仮称）の漫画
 
 「このPanic Player関連の営みが、もし『電脳倶楽部』の企画だったら？」という仮想空間を舞台にした漫画を掲載しています。**現在は -1 ～ 4 を公開中**。**5 ～ 8 は順次追加予定**です。
+
+漫画の中でたびたび登場する **「FM音源で歌うPanic」** は、ブラウザ版でも再生できます。**[「FM音源で歌うPanic」を見る・再生する](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**
 
 サムネイルをクリックすると元の画像を開けます。
 
