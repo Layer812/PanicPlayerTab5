@@ -51,13 +51,11 @@ TURBO does not change the X68000-side playback speed itself. It changes the bala
 
 A sample PAN file, [DENKO1.PAN](https://github.com/Layer812/PanicPlayerTab5/blob/main/DENKO1.PAN), is available.
 
-## Z-MUSIC: direction for the next production release
+## Z-MUSIC
 
-The next version of panicplayer is intended to use the **authentic resident Z-MUSIC 2.08 driver** as its standard music path, with playback through the original **PANIC.X V1.38**. Further special-case development for direct FM-register playback is on hold.
+The music playback configuration uses **Z-MUSIC SYSTEM v2.08**, the X68000 music driver created by **Zenji Nishikawa (西川善司)**.
 
-Development builds have demonstrated genuine Z-MUSIC residency and FM playback, as well as continued PAN video display in the R7 series. **An audible buzzing/gritty FM noise remains a known limitation** in some tests. These observations were made across different development builds; they are not proof of one fully validated production firmware.
-
-**This is a development direction, not an announcement that the current M5Burner image includes the new Z-MUSIC configuration.** The public source and physical firmware must be matched and verified before release.
+See the [Z-MUSIC v2.08 copyright and redistribution notice](docs/ZMUSIC_2_08_NOTICE.md) for original documentation and attribution.
 
 ## Looking for a fuller X68000 experience?
 
@@ -111,6 +109,7 @@ On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an i
 
 - **New code in Panic Player Tab5**: © 2026 Layer812.
 - **PANIC / `PANIC.X`**: Original author and copyright holder **Hideya Nagata (pako / ぱこたん)**; V1.38 modifications by **Nashimi (なしみ)**. The original documents and conditions take precedence.
+- **Z-MUSIC SYSTEM v2.08**: © Zenji Nishikawa (西川善司). See the [Z-MUSIC rights notice](docs/ZMUSIC_2_08_NOTICE.md).
 - **Musashi**: © Karl Stenerud and contributors (MIT License).
 - **PX68K / WinX68k / xkeropi**: Thanks to all developers, porters, and hardware researchers in this lineage.
 - **Individual `.PAN` works**: Rights to animations, music, and data remain with their respective creators and rights holders.
@@ -122,11 +121,13 @@ On Windows with ESP-IDF 5.5.4, `RUN_THIS_BUILD_PUBLIC_SOURCE.cmd` builds in an i
 
 Thank you to everyone who has created and preserved the PANIC and X68000 culture.
 
-## Denko (working title) — comic gallery
+## Denko (working title) — comic
 
-A comic featuring Denko, who also appears in a PANIC sample. **Episodes -1 through 4** are available; **5 through 8** are planned.
+What if the activities surrounding Panic Player were a project of **Den-no Club (電脳倶楽部)**? This comic explores an imaginary world built around that premise. **Episodes -1 through 4** are available, with **5 through 8** planned.
 
-Click any thumbnail to open the full-size image.
+Click a thumbnail to open the full-size image.
+
+*This is an independent fictional premise, not an official Den-no Club project or publication.*
 
 <table>
 <tr>
