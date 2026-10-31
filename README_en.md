@@ -31,7 +31,7 @@ panicplayer is currently available through **M5Burner**.
 **M5Burner Share Code**
 
 ```text
-UjzO1MYxSNIeYBiu
+nsDMO5hHzVw4nB1U
 ```
 
 Open M5Burner, use **Share Burn**, and enter the share code above.
@@ -124,6 +124,8 @@ Thank you to everyone who has created and preserved the PANIC and X68000 culture
 ## Denko (working title) — comic
 
 What if the activities surrounding Panic Player were a project of **Den-no Club (電脳倶楽部)**? This comic explores an imaginary world built around that premise. **Episodes -1 through 4** are available, with **5 through 8** planned.
+
+The **“FM音源で歌うPanic” (FM-singing PANIC)** featured throughout the comic can be watched and played in your browser: **[Play FM音源で歌うPanic](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**.
 
 Click a thumbnail to open the full-size image.
 
