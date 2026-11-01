@@ -129,7 +129,7 @@ Thank you to everyone who has created and preserved the PANIC and X68000 culture
 
 ## Denko (working title) — comic
 
-What if the activities surrounding Panic Player were a project of **Den-no Club (電脳倶楽部)**? This comic explores an imaginary world built around that premise. **Episodes -1 through 4** are available, with **5 through 8** planned.
+What if the activities surrounding Panic Player were a project of **Den-no Club (電脳倶楽部)**? This comic explores an imaginary world built around that premise. **Episodes -1 through 5** are available, with **6 through 8** planned.
 
 The **“FM音源で歌うPanic” (FM-singing PANIC)** featured throughout the comic can be watched and played in your browser: **[Play FM音源で歌うPanic](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**.
 
@@ -147,6 +147,11 @@ Click a thumbnail to open the full-size image.
   <td align="center" width="33%"><a href="./denko2.png"><img src="./denko2.png" width="185" alt="Denko (working title), comic 2"></a><p><strong>2</strong></p></td>
   <td align="center" width="33%"><a href="./denko3.png"><img src="./denko3.png" width="185" alt="Denko (working title), comic 3"></a><p><strong>3</strong></p></td>
   <td align="center" width="33%"><a href="./denko4.png"><img src="./denko4.png" width="185" alt="Denko (working title), comic 4"></a><p><strong>4</strong></p></td>
+</tr>
+<tr>
+  <td align="center" width="33%"><a href="./denko5.png"><img src="./denko5.png" width="185" alt="Denko (working title), comic 5"></a><p><strong>5</strong></p></td>
+  <td></td>
+  <td></td>
 </tr>
 </table>
 
