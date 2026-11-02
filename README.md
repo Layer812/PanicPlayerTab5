@@ -131,7 +131,7 @@ PANICとX68000の文化を支え、貴重なデータを保存されてきた皆
 
 ## デンコ（仮称）の漫画
 
-「このPanic Player関連の営みが、もし『電脳倶楽部』の企画だったら？」という仮想空間を舞台にした漫画を掲載しています。**現在は -1 ～ 5 を公開中**。**6 ～ 8 は順次追加予定**です。
+「このPanic Player関連の営みが、もし『電脳倶楽部』の企画だったら？」という仮想空間を舞台にした漫画を掲載しています。**現在は -1 ～ 6 を公開中**。**7 ～ 8 は順次追加予定**です。
 
 漫画の中でたびたび登場する **「FM音源で歌うPanic」** は、ブラウザ版でも再生できます。**[「FM音源で歌うPanic」を見る・再生する](https://layer812.github.io/PanicPlayerWeb/?pan=DENKOSN)**
 
@@ -152,7 +152,7 @@ PANICとX68000の文化を支え、貴重なデータを保存されてきた皆
 </tr>
 <tr>
   <td align="center" width="33%"><a href="./denko5.png"><img src="./denko5.png" width="185" alt="デンコ（仮称）漫画 5"></a><p><strong>5</strong></p></td>
-  <td></td>
+  <td align="center" width="33%"><a href="./denko6.png"><img src="./denko6.png" width="185" alt="デンコ（仮称）漫画 6"></a><p><strong>6</strong></p></td>
   <td></td>
 </tr>
 </table>
