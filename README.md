@@ -157,4 +157,13 @@ PANICとX68000の文化を支え、貴重なデータを保存されてきた皆
 </tr>
 </table>
 
+### 番外編
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denkoex1.webp"><img src="./denkoex1.webp" width="185" alt="デンコ漫画 番外編① 四者面談"></a><p><strong>番外編① 四者面談</strong></p></td>
+</tr>
+</table>
+
+
 ※漫画画像の取り扱いは、PANIC.Xや各 `.PAN` データの配布条件とは別です。

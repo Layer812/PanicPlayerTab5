@@ -155,4 +155,13 @@ Click a thumbnail to open the full-size image.
 </tr>
 </table>
 
+### Bonus episode
+
+<table>
+<tr>
+  <td align="center" width="33%"><a href="./denkoex1.webp"><img src="./denkoex1.webp" width="185" alt="Denko bonus comic 1: 四者面談 (Four-way Meeting)"></a><p><strong>Bonus 1: 四者面談 (Four-way Meeting)</strong></p></td>
+</tr>
+</table>
+
+
 The comics are separate works; permissions for PANIC.X and .PAN files do not automatically cover these images.
